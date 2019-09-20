@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fuerza | Centrales</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Hector Azamar" >
+  <link rel="stylesheet"  href="../bootstrap-3.3.7/dist/css/bootstrap.min.css">
+  <link rel="stylesheet"  href="../bootstrap-3.3.7/dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/Rcontraseña.css">
+  <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+</head>
+<body>
+  <header>
+    <div class="contenedor">
+      <div class="img">
+      </div>
+      <div>
+        <h1 id="titulo">Gestor de Fuerza Área Veracruz  </h1>
+      </div>
+      <nav>
+        <ul>
+          <li ><a href="index.html">Inicio</a></li>
+          <li class="actual"><a href="centrales.html">Centrales</a></li>
+          <li ><a href="Contacto.html">Cerrar sesion</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="pestania">
+    <div class="contenedor">
+      <h1 class="centra-inicio">Confirmación de Contraseña</h1>
+    </div>
+  </section>
+  <br>
+  <br>
+    <div id="Contenedor">
+            <div class="Icon">
+                <span class="glyphicon glyphicon-user"></span> <!--Icono de usuario-->
+            </div>
+            <div class="ContentForm">
+                <form action="controllers/cambia_contra.php" method="post" name="FormEntrar">
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input type="text" name="Code" class="form-control" placeholder="Codigo de confirmación" aria-describedby="sizing-addon1" required>
+                            </div>
+                             <br>
+                              <div class="input-group input-group-lg">
+                                <span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input type="password" name="Contra" class="form-control" placeholder="Nueva contraseña" aria-describedby="sizing-addon1" required>
+                            </div>
+                             <br>
+                    <button class="btn btn-lg btn btn-primary btn-block btn-signin" id="IngresoLog" type="submit">Confirmar</button>
+                    
+                </form>
+            </div>  
+         </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<footer>
+  <p>SISTEMA GESTOR DE CENTRALES DEL AREA DE FUERZA, COPYRIGHT &copy 2018 | TELMEX</p>
+</footer>
+
+</body>
+</html>

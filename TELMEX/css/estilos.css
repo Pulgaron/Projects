@@ -1,0 +1,238 @@
+body{
+	font: 15px  Helvetica, Arial, sans-serif;
+	padding:0;
+	margin:0;
+	background-color: #f4f4f4;
+	height: 100%;
+}
+/* ESTILOS GLOBALES*/
+.fuser {
+    text-align: right;
+    margin-top: -36px;
+}
+#lista_coordenadas{
+    display: none;
+}
+
+.pos-btn{
+	text-align: right;
+	padding-right: 47px;
+}
+
+#lista_coordenadas_central{
+    display: none;
+}
+.img{
+	width: 141px;
+    height: 75px;
+    background: url(../img/Logo.jpg);
+    background-size: cover;
+    float: left;
+    margin-right: 44px;
+
+  }
+  .header2{
+	position:fixed;
+	z-index:1000;
+	width: 100%;
+}
+  .barra{
+  	background: #CBF2D7;
+    height: 36px;
+    width: 100%;
+    text-align: center;
+    color: black;
+  }
+  .busc{
+  	margin-top: 23px;
+    margin-right: 52px;
+  }
+.contenedor{
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+#titulo{
+	font-size: 30px;
+}
+#titulov{
+	font-size: 25px;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+.menu-fixed{
+	position:fixed;
+	z-index:1000;
+	top:0;
+	width:100%;
+	max-width:100%;
+}
+.boton1{
+	height: 38px;
+	background-color: #e8491d;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #fff;
+	font-weight: bold;
+}
+ /* ESTILOS DE ENCABEZADO */
+ .nav-adm{
+ 	margin-top: 30px;
+ }
+header{
+	background-color: #060606;
+	color: #fff;
+	padding-top: 5px;
+	min-height: 70px;
+	border-bottom: 3px solid #2EE2F1;
+
+}
+header a{
+	color:#fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 17px;
+}
+#fuente a{
+	font-size: 17px;
+}
+header li{
+	float:left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+header #marca{
+	float: left;
+	margin-top:20px;
+}
+header #marca h1{
+	 margin: 0;
+    margin-bottom: 21px;
+    margin-top: -18px;
+}
+header nav{
+	float: right;
+	margin-top: 10px;
+}
+ header .actual a{
+	color: #0067EE;
+	font-weight: bold;
+}
+
+header a:hover{
+	color:#ccc;
+	font-weight: bold;
+}
+/* CABACERA DEGEN*/
+
+.filtro{
+	width: 20%;
+	height: 15%;
+	float: right;
+
+}
+.al-but{
+	float: right;
+	margin-top: 21px;
+	margin-right: 67px;
+}
+
+#pestania{
+	padding: 15px;
+	padding: 0px;
+	color: #fff;
+	background-color: #0067EE;
+
+}
+/* MAPA */
+ #map {
+         height: 100%;
+   		width: 90%;
+    	margin-top: 25px;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+.alineacion{
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+/* VISTA INFORMACION*/
+.lateral{
+	float: right;
+	width: 30%;
+	margin-top: 10px;
+}
+.oscuro{
+	padding: 25px;
+	background-color: #35424a;
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	text-align: justify;
+}
+.centra-inicio{
+	text-align: left;
+	font-size: 23px;
+}
+.oscuro a{
+	text-decoration: none;
+	color: #1293d4;
+}
+/* MAIN-COL*/
+#main-col{
+	float: left;
+	width: 65%;
+	text-align: justify;
+}
+table th, tr {
+  text-align: center;
+}
+
+#contacto p{
+	text-align: justify;
+	font-weight: bold;
+	font-size: 16px;
+}
+/* PIE DE PAGINA*/
+footer{
+	padding: 20px;
+	margin-top: 20px;
+	color:#fff;
+	background-color: #0067EE;
+	text-align: center;
+}
+
+/*MEDIA QUERIES */
+@media (max-width: 768px){
+	header #marca,
+	header nav,
+ 	header nav li,
+ 	#boletin h1,
+ 	#boletin form,
+ 	article #main-col,
+ 	aside #lateral{
+ 		float: none;
+ 		text-align: center;
+ 		width: 100%;
+ 	}
+ 	header{
+ 		padding-bottom: 20px;
+ 	}
+ 	#boletin h1{
+ 		margin-top: 40px;
+ 	}
+ 	#boletin button{
+ 		display: block;
+ 		width: 100%;
+ 	}
+}

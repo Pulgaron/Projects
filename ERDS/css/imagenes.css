@@ -1,0 +1,11 @@
+a{
+    padding: .375rem .75rem;
+    border: 1px solid #373a3c;
+    background: #373a3c;
+    border-radius: .25rem;
+    color: white;
+    transition: color .15s ease-in-out,
+    background-color .15s ease-in-out;
+    text-decoration: none;
+    font-family: sans-serif;
+}

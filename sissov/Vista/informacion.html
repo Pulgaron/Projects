@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Información</title>
+    <link rel="icon" type="image/png" width="100%" height="100%" href="../imagenes/SSS.png">
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../css/iconos.css" type="text/css" media="all" />
+    <meta name="author" content="Genesis Mora Cruz">
+</head>
+<body>
+<header id="main-header">
+    <div class="container-fluid" style="background-color: #ecf0f1">
+        <div class="row">
+            <div class="col-lg-2">
+                <img width="127.5px" height="97.5px"  src="../imagenes/logoUVNOMBRE.png">
+            </div>
+            <div class="col-lg-8">
+                <h4 style="text-align: center; font-size: 26px">Sistema para la localización de Sitios de Disposición Final de Residuos Sólidos Urbanos del Estado de Veracruz</h4>
+            </div>
+            <div class="col-lg-2">
+                <img width="82.5px" height="82.5" style="margin-right: 25%; margin-top: 15px" src="../imagenes/SSS.png">
+            </div>
+        </div>
+    </div>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" >
+            <div class="collapse navbar-collapse" id="navbarColor01" >
+                <ul class="navbar-nav mr-auto" style="font-size: 14px">
+                    <li class="nav-item active">
+                        <a class="nav-link"  href="../index.php"><span class="sr-only; icon-home"></span> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="informacion.html">Información</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="QuienesSomos.html">Quiénes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="../Consultas2.php">Consultas</a>
+                    </li>
+                    <!--<li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="download" aria-expanded="false">Consultas <span class="caret"></span></a>
+                        <div class="dropdown-menu" aria-labelledby="download">
+                            <a class="dropdown-item" target="_blank" href="https://jsfiddle.net/bootswatch/jmg3gykg/">Por Estado</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item"  href="Vista/consultas/ConsultaRegion.php">Por Región</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item"  href="Vista/consultas/ConsultaMunicipios.php">Por Municipio</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item"  href="Vista/consultas/ConsultaTipo.php">Por Tipo de sitio</a>
+                        </div>
+                    </li>-->
+                </ul>
+            </div>
+            <div style="margin-right: 40px;">
+                <script languaje="JavaScript">
+                    var mydate=new Date()
+                    var year=mydate.getYear()
+                    if (year < 1000)
+                        year+=1900
+                    var day=mydate.getDay()
+                    var month=mydate.getMonth()
+                    var daym=mydate.getDate()
+                    if (daym<10)
+                        daym="0"+daym
+                    var dayarray=new Array("Domingo,","Lunes,","Martes,","Miércoles,","Jueves,","Viernes,","Sábado,")
+                    var montharray=new Array("enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre")
+                    document.write("<font color='white' face='sans-serif' style='font-size:10pt; margin-top: 10px'>"+dayarray[day]+" "+daym+" de "+montharray[month]+" de "+year+"</font>")
+                </script>
+            </div>
+            <a class="btn btn-success btn-sm" style="margin-right: 20px" href="login.html">Iniciar Sesión</a>
+            <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<section style="padding-top: 80px">
+    <article >
+        <h3 style="text-align: justify">Generación de los residuos sólidos</h3>
+        <br><br>
+        <h5 style="text-align: justify">Es la acción de producir residuos a través de desarrollo de procesos productivos o de consumo. La generación y composición de los RSU varía de acuerdo con la modificación en los patrones de consumo, el nivel de vida, la estación del año, las costumbres y las zona donde habita la población; trayendo como consecuencia el incremento en la generación de residuos de empaques o embalajes, plástico, papel y cartón. En cuanto a las estaciones del año, en el verano se producen más residuos de frutos y verduras, mientras que en el invierno se desechan gran cantidad de residuos orgánicos derivados de festejos, botellas de vidrio o plástico, latas envolturas y empaques de enseres.</h5>
+        <br>
+        <h5 style="text-align: justify">De acuerdo con la Ley General para la Prevención y Gestión Integral de los Residuos los residuos se clasifican en Residuos Sólidos Urbanos (RSU), Residuos peligrosos (RP’s) y Residuos de manejo especial (RME).</h5>
+        <br>
+        <div>
+            <table >
+                <tr>
+                    <td width="30%" >
+                        <div class="card text-white bg-info mb-3" style="max-width: 20rem;">
+                            <div class="card-header">
+                                <h4 class="card-title" style="color: white; margin-top: 10px">Residuos Sólidos Urbanos:</h4>
+                            </div>
+                            <div class="card-body" style="text-align: center; color: black">
+                                <p>Aquellos desechos generados en las casas-habitación, que resultan de la eliminación de los materiales que utilizan en sus actividades domésticas, de los productos que consumen y de sus envases, embalajes o empaques; los residuos que provienen de cualquier otra actividad dentro de establecimientos o en la vía pública que genere residuos con características domiciliarias, y los resultantes de la limpieza de las vías y lugares públicos.</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td width="5%" ></td>
+                    <td width="30%" >
+                        <div class="card text-white bg-info mb-3" style="max-width: 20rem;">
+                            <div class="card-header">
+                                <h4 class="card-title" style="color: white; margin-top: 10px">Residuos Peligrosos:</h4>
+                            </div>
+                            <div class="card-body" style="text-align: center; color: black">
+                                <br><br>
+                                <p>Poseen algunas de las características siguientes: corrosividad, reactividad, explosividad, toxicidad, inflamabilidad o que contengan algún agente biológico infeccioso (CRETIB) que les confieran peligrosidad, así como envases, recipientes, embalajes y suelos que hayan sido contaminados cuando se transfieran a otro sitio.</p>
+                                <br><br>
+                            </div>
+                        </div>
+                    </td>
+                    <td width="5%" ></td>
+                    <td width="30%" >
+                        <div class="card text-white bg-info mb-3" style="max-width: 20rem;">
+                            <div class="card-header">
+                                <h4 class="card-title" style="color: white; margin-top: 10px">Residuos de Manejo Especial:</h4>
+                            </div>
+                            <div class="card-body" style="text-align: center; color: black">
+                                <br><br><br><br>
+                                <p>Son generados en los procesos productivos, que no reúnen las características para ser considerados como peligrosos o como RSU, o que son producidos por grandes generadores de RSU.</p>
+                                <br><br><br><br>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--<h5 style="text-align: justify"><b>Residuos Sólidos Urbanos:</b> aquellos desechos generados en las casas-habitación, que resultan de la eliminación de los materiales que utilizan en sus actividades domésticas, de los productos que consumen y de sus envases, embalajes o empaques; los residuos que provienen de cualquier otra actividad dentro de establecimientos o en la vía pública que genere residuos con características domiciliarias, y los resultantes de la limpieza de las vías y lugares públicos.</h5>
+        <h5 style="text-align: justify"><b>Residuos Peligrosos:</b> poseen algunas de las características siguientes: corrosividad, reactividad, explosividad, toxicidad, inflamabilidad o que contengan algún agente biológico infeccioso (CRETIB) que les confieran peligrosidad, así como envases, recipientes, embalajes y suelos que hayan sido contaminados cuando se transfieran a otro sitio.</h5>
+        <h5 style="text-align: justify"><b>Residuos de Manejo Especial:</b> son generados en los procesos productivos, que no reúnen las características para ser considerados como peligrosos o como RSU, o que son producidos por grandes generadores de RSU.</h5>
+        <br>-->
+        <h3 style="text-align: justify; margin-top: 130px">Disposición Final</h3>
+        <br><br>
+        <h5 style="text-align: justify">La LGPGIR define la disposición final como la acción de depositar permanentemente residuos, en sitios e instalaciones cuyas características permiten prevenir su liberación al ambiente y las consecuentes afectaciones a la salud de la población, a los ecosistemas y sus elementos. La disposición final es la última etapa del manejo integral de los RSU, está íntimamente relacionada con la preservación del ambiente y la salud de la población. Esta actividad se debe controlar mediante un sistema que minimice los impactos negativos hacia el entorno.</h5>
+        <br>
+        <h5 style="text-align: justify">Dentro de las alternativas viables para la disposición final de los RSU, y tomando en cuenta las condiciones actuales del país, se cuenta con el método de relleno sanitario. Un relleno sanitario es una obra de infraestructura que aplica métodos de ingeniería para la disposición final de los RSU, sobre el suelo, esparciéndolos y compactándolos al menor volumen posible, cubriéndolos con material natural o sintético. Se deben considerar los mecanismos para el control de impactos ambientales y debe estar de acuerdo con los requisitos normativos vigentes de la NOM-083-SEMARNAT-2003. La cantidad y componentes de residuos que lleguen a un relleno sanitario dependerán de las técnicas de manejo que han sido aplicadas antes como parte de un sistema de manejo integral.</h5>
+        <br>
+        <!--<p style="text-align: justify"><b><ins>NOM-083</ins></b></p>-->
+    </article>
+</section>
+
+<!--RELLENOS SANITARIOS-->
+<div class="container-fluid" style="background-color: #2C3E50; margin-top: 50px">
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-4" >
+            <h4 style="text-align: justify; margin-top: 100px; color: white"><b>Relleno sanitario.</b></h4>
+            <h5 style="text-align: left; color: white"> Obra de infraestructura que involucra métodos y obras de ingeniería para la disposición final de los residuos sólidos urbanos y de manejo especial, con el fin de controlar, a través de la compactación e infraestructura adicionales, los impactos ambientales.</h5>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-6" >
+            <div class="bd-example">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img style="width: 480px; height: 360px" src="../imagenes/Fotos/Rellenos/Bordo_Poniente_CDMX.jpg" class="d-block w-100" alt="Bordo_Poniente_CDMX">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Bordo_Poniente_CDMX</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img style="width: 480px; height: 360px" src="../imagenes/Fotos/Rellenos/Estado_de_Mexico.jpg" class="d-block w-100" alt="Estado de México">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Estado_de_Mexico</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img style="width: 480px; height: 360px" src="../imagenes/Fotos/Rellenos/Merida_Yuc.JPG" class="d-block w-100" alt="Mérida, Yuc.">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Mérida, Yuc.</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img style="width: 480px; height: 360px" src="../imagenes/Fotos/Rellenos/Nogales_Ver.bmp" class="d-block w-100" alt="Nogales, Ver.">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Nogales, Ver.</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img style="width: 480px; height: 360px" src="../imagenes/Fotos/Rellenos/Queretaro_Qro.JPG" class="d-block w-100" alt="Querétaro, Qro.">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Querétaro, Qro.</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img style="width: 480px; height: 360px" src="../imagenes/Fotos/Rellenos/Talud_con_nieve_2.jpeg" class="d-block w-100" alt="Talud con nieve">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Talud con nieve</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--SITIOS CONTROLADOS-->
+<div class="container-fluid" style="background-color: #ecf0f1; margin-top: 50px">
+    <div class="row">
+        <div class="col-lg-6" >
+            <div class="bd-example">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img style="width: 480px; height: 360px" src="../imagenes/Fotos/Sitios_controlados/Celda_finalizada.JPG" class="d-block w-100" alt="Celda finalizada">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Celda finalizada</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img style="width: 480px; height: 360px" src="../imagenes/Fotos/Sitios_controlados/Muestreo_de_lixiviados.jpg" class="d-block w-100" alt="Muestreo de lixiviados">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Muestreo de lixiviados</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img style="width: 480px; height: 360px" src="../imagenes/Fotos/Sitios_controlados/Pozos_biogas.JPG" class="d-block w-100" alt="Pozos de biogás">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Pozos de biogás</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img style="width: 480px; height: 360px" src="../imagenes/Fotos/Sitios_controlados/Talud_y_zona_de_tiro.JPG" class="d-block w-100" alt="Talud y zona de tiro">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Talud y zona de tiro</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-4" >
+            <h4 style="text-align: justify; margin-top: 100px; color: black"><b>Sitio controlado.</b></h4>
+            <h5 style="text-align: left; color: black"> Sitio inadecuado de disposición final que cumple con las especificaciones de un relleno sanitario en lo que se refiere a obras de infraestructura y operación, pero no cumple con las especificaciones de impermeabilización.</h5>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+</div>
+
+<!--SITIOS NO CONTROLADOS-->
+<div class="container-fluid" style="background-color: #2C3E50; margin-top: 50px">
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-4" >
+            <h4 style="text-align: justify; margin-top: 120px; color: white"><b>Sitio no controlado.</b></h4>
+            <h5 style="text-align: left; color: white"> Sitio inadecuado de disposición final que no cumple con los requisitos establecidos en esta Norma.</h5>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-6" >
+            <div class="bd-example">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img style="width: 480px; height: 360px" src="../imagenes/Fotos/Sitio_no_controlado/Basurero_incendiado.jpg" class="d-block w-100" alt="Basurero_incendiado">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Basurero incendiado</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img style="width: 480px; height: 360px" src="../imagenes/Fotos/Sitio_no_controlado/Bolsas_rojas.jpg" class="d-block w-100" alt="Bolsas_rojas">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Bolsas_rojas</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img style="width: 480px; height: 360px" src="../imagenes/Fotos/Sitio_no_controlado/Casas-aves-manglar.BMP" class="d-block w-100" alt="Casas de aves en manglar">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Casas de aves en manglar</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img style="width: 480px; height: 360px" src="../imagenes/Fotos/Sitio_no_controlado/Salida_de_lixs_a_pie_del_talud.jpg" class="d-block w-100" alt="Salida de lixiviados">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Salida de lixiviados</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img style="width: 480px; height: 360px" src="../imagenes/Fotos/Sitio_no_controlado/Talud_quemado_2.jpg" class="d-block w-100" alt="Talud quemado">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Talud quemado</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img style="width: 480px; height: 360px" src="../imagenes/Fotos/Sitio_no_controlado/TIradero_junto_a_manglar.jpg" class="d-block w-100" alt="Tiradero junto a manglar">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Tiradero junto a manglar</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 480px">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                </ol>
+
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img style="width: 480px; height: 360px" src="../imagenes/Fotos/Rellenos/Bordo_Poniente_CDMX.jpg" alt="Bordo Poniente CDMX">
+                        <div class="carousel-caption">
+                            <h3>Bordo Poniente CDMX</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img style="width: 480px; height: 360px" src="../imagenes/Fotos/Rellenos/Estado_de_Mexico.jpg" alt="Estado de México">
+                        <div class="carousel-caption">
+                            <h3>Estado de México</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img style="width: 480px; height: 360px" src="../imagenes/Fotos/Rellenos/Merida_Yuc.JPG" alt="Mérida, Yuc.">
+                        <div class="carousel-caption">
+                            <h3>Mérida, Yuc.</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img style="width: 480px; height: 360px" src="../imagenes/Fotos/Rellenos/Nogales_Ver.bmp" alt="Nogales, Ver.">
+                        <div class="carousel-caption">
+                            <h3>Nogales, Ver.</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img style="width: 480px; height: 360px" src="../imagenes/Fotos/Rellenos/Queretaro_Qro.JPG" alt="Querétaro, Qro.">
+                        <div class="carousel-caption">
+                            <h3>Querétaro, Qro.</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img style="width: 480px; height: 360px" src="../imagenes/Fotos/Rellenos/Talud_con_nieve_2.jpeg" alt="Talud con nieve">
+                        <div class="carousel-caption">
+                            <h3>Talud con nieve</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+</div>
+
+        <table >
+            <tr>
+                <td width="30%" >
+                    <div class="card mb-3 thumbnail">
+                        <h5 class="card-header">Bordo Poniente CDMX</h5>
+                        <a href="../imagenes/Fotos/Rellenos/Bordo_Poniente_CDMX.jpg">
+                            <img style="height: 165px; width: 100%; display: block;" src="../imagenes/Fotos/Rellenos/Bordo_Poniente_CDMX.jpg" alt="Bordo Poniente CDMX">
+                        </a>
+                    </div>
+                </td>
+                <td width="5%" ></td>
+                <td width="30%" >
+                    <div class="card mb-3 thumbnail">
+                        <h5 class="card-header">Estado de Mexico</h5>
+                        <a href="../imagenes/Fotos/Rellenos/Estado_de_Mexico.jpg">
+                            <img style="height: 165px; width: 100%; display: block;" src="../imagenes/Fotos/Rellenos/Estado_de_Mexico.jpg" alt="Estado de Mexico">
+                        </a>
+                    </div>
+                </td>
+                <td width="5%" ></td>
+                <td width="30%" >
+                    <div class="card mb-3 thumbnail">
+                        <h5 class="card-header">Mérida, Yuc.</h5>
+                        <img style="height: 165px; width: 100%; display: block;" src="../imagenes/Fotos/Rellenos/Merida_Yuc.JPG" alt="Mérida, Yuc.">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td width="30%" >
+                    <div class="card mb-3">
+                        <h5 class="card-header">Nogales, Ver.</h5>
+                        <img style="height: 165px; width: 100%; display: block;" src="../imagenes/Fotos/Rellenos/Nogales_Ver.bmp" alt="Nogales, Ver.">
+                    </div>
+                </td>
+                <td width="5%" ></td>
+                <td width="30%" >
+                    <div class="card mb-3">
+                        <h5 class="card-header">Querétaro, Qro.</h5>
+                        <img style="height: 165px; width: 100%; display: block;" src="../imagenes/Fotos/Rellenos/Queretaro_Qro.JPG" alt="Querétaro, Qro.">
+                    </div>
+                </td>
+                <td width="5%" ></td>
+                <td width="30%" >
+                    <div class="card mb-3">
+                        <h5 class="card-header">Talud con nieve</h5>
+                        <img style="height: 165px; width: 100%; display: block;" src="../imagenes/Fotos/Rellenos/Talud_con_nieve_2.jpeg" alt="Talud con nieve">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <h5 style="text-align: justify; margin-top: 75px"><b>Sitio controlado. </b></h5>
+        <p style="text-align: justify"> Sitio inadecuado de disposición final que cumple con las especificaciones de un relleno sanitario en lo que se refiere a obras de infraestructura y operación, pero no cumple con las especificaciones de impermeabilización.</p>
+        <table >
+            <tr>
+                <td width="25%" >
+                    <div class="card mb-3">
+                        <h5 class="card-header">Celda finalizada</h5>
+                        <img style="height: 165px; width: 100%; display: block;" src="../imagenes/Fotos/Sitios_controlados/Celda_finalizada.JPG" alt="Celda finalizada">
+                    </div>
+                </td>
+                <td width="25%" >
+                    <div class="card mb-3">
+                        <h5 class="card-header">Muestreo de lixiviados</h5>
+                        <img style="height: 165px; width: 100%; display: block;" src="../imagenes/Fotos/Sitios_controlados/Muestreo_de_lixiviados.jpg" alt="Muestreo de lixiviados">
+                    </div>
+                </td>
+                <td width="25%" >
+                    <div class="card mb-3">
+                        <h5 class="card-header">Pozos biogás</h5>
+                        <img style="height: 165px; width: 100%; display: block;" src="../imagenes/Fotos/Sitios_controlados/Pozos_biogas.JPG" alt="Pozos biogás">
+                    </div>
+                </td>
+                <td width="25%" >
+                    <div class="card mb-3">
+                        <h5 class="card-header">Talud y zona de tiro</h5>
+                        <img style="height: 165px; width: 100%; display: block;" src="../imagenes/Fotos/Sitios_controlados/Talud_y_zona_de_tiro.JPG" alt="Talud y zona de tiro">
+                    </div>
+                </td>
+            </tr>
+        </table>align: justify; margin-top: 75px"><b>Sitio no controlado. </b></h5>
+        <p style="text-align: justify"> Sitio inadecuado de disposición final que no cumple con los requisitos establecidos en esta Norma.</p>
+        <table >
+            <tr>
+                <td width="30%" >
+                    <div class="card mb-3">
+                        <h5 class="card-header">Basurero incendiado</h5>
+                        <img style="height: 165px; width: 100%; display: block;" src="../imagenes/Fotos/Sitio_no_controlado/Basurero_incendiado.jpg">
+                    </div>
+                </td>
+                <td width="5%" ></td>
+                <td width="30%" >
+                    <div class="card mb-3">
+                        <h5 class="card-header">Bolsas rojas</h5>
+                        <img style="height: 165px; width: 100%; display: block;" src="../imagenes/Fotos/Sitio_no_controlado/Bolsas_rojas.jpg">
+                    </div>
+                </td>
+                <td width="5%" ></td>
+                <td width="30%" >
+                    <div class="card mb-3">
+                        <h5 class="card-header">Casas, aves, manglar</h5>
+                        <img style="height: 165px; width: 100%; display: block;" src="../imagenes/Fotos/Sitio_no_controlado/Casas-aves-manglar.BMP">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td width="30%" >
+                    <div class="card mb-3">
+                        <h5 class="card-header">Salida de lixiviados</h5>
+                        <img style="height: 165px; width: 100%; display: block;" src="../imagenes/Fotos/Sitio_no_controlado/Salida_de_lixs_a_pie_del_talud.jpg">
+                    </div>
+                </td>
+                <td width="5%" ></td>
+                <td width="30%" >
+                    <div class="card mb-3">
+                        <h5 class="card-header">Talud quemado</h5>
+                        <img style="height: 165px; width: 100%; display: block;" src="../imagenes/Fotos/Sitio_no_controlado/Talud_quemado_2.jpg">
+                    </div>
+                </td>
+                <td width="5%" ></td>
+                <td width="30%" >
+                    <div class="card mb-3">
+                        <h5 class="card-header">Tiradero junto a manglar</h5>
+                        <img style="height: 165px; width: 100%; display: block;" src="../imagenes/Fotos/Sitio_no_controlado/TIradero_junto_a_manglar.jpg">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </article>
+</section>-->
+<script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
+<script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://bootswatch.com/_assets/js/custom.js"></script>
+<footer>
+    <p>SISSOV COPYRIGHT &copy 2019 UNIVERSIDAD VERACRUZANA | Contacto: Dra. Gloria I. González López giglzlzy@yahoo.com.mx</p>
+</footer>
+</body>
+</html>

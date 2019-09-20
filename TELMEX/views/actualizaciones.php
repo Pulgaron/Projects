@@ -1,0 +1,104 @@
+<?php
+
+session_start();//Reanudar la sesión en el caso de que haya sido iniciada anteriormente
+  if (!isset($_SESSION["iduser"])){//Si se almaceno algo en la variable super global
+    header("Location:../views/InicioSesion.php");//No hay nada en la variable super global asi que lo redirigimos NO PASAS!
+  } else {
+    $name = require_once("../controllers/my_data.php");
+    $validar = require_once("../controllers/confirma_nivel.php");
+    $mandar = strcasecmp($validar, 'A');
+    $mandar1 = strcasecmp($validar, 'U');
+      if ($mandar) {
+        if ($mandar1) {
+          header("Location:../views/no_found.php");
+        }
+
+      }
+
+  }
+
+
+ 
+  $Siglas = $_GET["Siglas"];
+  
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fuerza | Centrales</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Hector Azamar" >
+  
+  <link rel="stylesheet"  href="../bootstrap-3.3.7/dist/css/bootstrap.min.css">
+  <link rel="stylesheet"  href="../bootstrap-3.3.7/dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+</head>
+<body>
+  <header>
+    <div class="contenedor">
+      <div class="img">
+      </div>
+      <div>
+        <h1 id="titulo">Gestor de Fuerza Área Veracruz  </h1>
+      </div>
+      <nav>
+        <ul>
+          <li ><a href="../views/inicio_view.php">Inicio</a></li>
+          <li class="actual"><a href="../views/centrales.php">Centrales</a></li>
+          <li ><a href="../controllers/cerrar_sesion.php">Cerrar sesion</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="pestania">
+    <div class="contenedor">
+      <h1 class="centra-inicio">Actualizaciones</h1>
+    </div>
+  </section>
+  <br>
+  <br>
+   <section class="container">
+    <div class="panel panel-default">
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <h3 class="alineacion">Actualizaciones</h3>
+            <br>
+            <tr class="bg-primary">
+              <th>Centro de Mantenimiento</th>
+              <th>Central</th>
+              <th>Usuario</th>
+              <th>Comentario</th>
+            </tr>
+            <?php 
+            require_once("../controllers/centrales/obtener_comentarios.php");
+              foreach ($lista_comentarios as $comentarios):
+              ?>
+            <tr>
+              <td><?php echo $comentarios["cm"];?></td>
+              <td><?php echo $comentarios["central"];?></td>
+              <td><?php echo $comentarios["usuario"];?></td>
+              <td><?php echo $comentarios["mensaje"];?></td>
+            </tr>
+              <?php endforeach;?>
+        </table>
+
+      </div>
+    </div>        
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<footer>
+  <p>SISTEMA GESTOR DE CENTRALES DEL AREA DE FUERZA, COPYRIGHT &copy 2018 | TELMEX</p>
+</footer>
+
+</body>
+</html>
