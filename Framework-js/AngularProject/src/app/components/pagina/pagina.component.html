@@ -1,0 +1,13 @@
+<h1 class="subheader">Pagina de prueba</h1>
+
+<div *ngIf="nombre && apellido">
+    <h2>El nombre es {{nombre}} {{apellido}}</h2>
+</div>
+
+<div *ngIf="!nombre && !apellido">
+        <h2>No hay parametros por la url</h2>
+    </div>
+
+<button (click)="redireccion()">llevame al formulario</button>
+<hr>
+

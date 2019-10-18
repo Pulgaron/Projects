@@ -32,7 +32,7 @@ var controller = {
         console.log(params);
         //validar dtos con (validator)
         try {
-            var validateTitle = !validator.isEmpty(params.title);
+            var validateTitle = !validator.isEmpty(params.titulo);
             var validateContent = !validator.isEmpty(params.content);
 
         } catch (error) {
@@ -46,7 +46,7 @@ var controller = {
             //crear el objeto a guardar
             var article = new Article();
             //asignar valores
-            article.titulo = params.title;
+            article.titulo = params.titulo;
             article.content = params.content;
             article.image = null;
             //guardar el articulo
@@ -144,7 +144,7 @@ var controller = {
         var params = req.body;
         //validar los datos
         try {
-            var validateTitle = !validator.isEmpty(params.title);
+            var validateTitle = !validator.isEmpty(params.titulo);
             var validateContent = !validator.isEmpty(params.content);
         } catch (error) {
             return res.status(404).send({
@@ -245,7 +245,7 @@ var controller = {
         if(file_ext != 'png' && file_ext != 'jpg' && file_ext != 'jpeg' && file_ext != 'gif'){
             //borrar el archivo
             fs.unlink(filePath, (err) =>{
-                res.status(200).send({
+                res.status(400).send({
                     status: 'error',
                     message: 'La extension no es valida'
                 });
@@ -300,7 +300,7 @@ var controller = {
         //find or 
         Article.find({"$or": [
 
-            {"title": {"$regex": searchString, "$options": "i"}},
+            {"titulo": {"$regex": searchString, "$options": "i"}},
             {"content": {"$regex": searchString, "$options": "i"}}
         ]})
         .sort([['date', 'descending']])
